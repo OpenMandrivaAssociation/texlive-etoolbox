@@ -1,3 +1,9 @@
+# revision 20922
+# category Package
+# catalog-ctan /macros/latex/contrib/etoolbox
+# catalog-date 2011-01-03 19:54:22 +0100
+# catalog-license lppl1.3
+# catalog-version 2.1
 Name:		texlive-etoolbox
 Version:	2.1
 Release:	1
@@ -48,6 +54,7 @@ the LaTeX kernel.
 %doc %{_texmfdistdir}/doc/latex/etoolbox/README
 %doc %{_texmfdistdir}/doc/latex/etoolbox/etoolbox.pdf
 %doc %{_texmfdistdir}/doc/latex/etoolbox/etoolbox.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -58,3 +65,5 @@ the LaTeX kernel.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}

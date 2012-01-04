@@ -6,7 +6,7 @@
 # catalog-version 2.1
 Name:		texlive-etoolbox
 Version:	2.1
-Release:	1
+Release:	2
 Summary:	Tool-box for LaTeX programmers using e-TeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/etoolbox

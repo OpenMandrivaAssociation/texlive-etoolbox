@@ -1,12 +1,6 @@
-# revision 20922
-# category Package
-# catalog-ctan /macros/latex/contrib/etoolbox
-# catalog-date 2011-01-03 19:54:22 +0100
-# catalog-license lppl1.3
-# catalog-version 2.1
 Name:		texlive-etoolbox
-Version:	2.1
-Release:	10
+Version:	2.5
+Release:	1
 Summary:	Tool-box for LaTeX programmers using e-TeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/etoolbox
@@ -40,11 +34,8 @@ the LaTeX kernel.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/etoolbox/etoolbox.def
-%{_texmfdistdir}/tex/latex/etoolbox/etoolbox.sty
-%doc %{_texmfdistdir}/doc/latex/etoolbox/README
-%doc %{_texmfdistdir}/doc/latex/etoolbox/etoolbox.pdf
-%doc %{_texmfdistdir}/doc/latex/etoolbox/etoolbox.tex
+%{_texmfdistdir}/tex/latex/etoolbox
+%doc %{_texmfdistdir}/doc/latex/etoolbox
 
 #-----------------------------------------------------------------------
 %prep
@@ -55,17 +46,3 @@ the LaTeX kernel.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.1-2
-+ Revision: 751642
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.1-1
-+ Revision: 718380
-- texlive-etoolbox
-- texlive-etoolbox
-- texlive-etoolbox
-- texlive-etoolbox
-

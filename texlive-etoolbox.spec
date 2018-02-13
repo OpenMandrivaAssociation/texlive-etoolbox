@@ -1,5 +1,5 @@
 Name:		texlive-etoolbox
-Version:	2.5
+Version:	2.5e
 Release:	1
 Summary:	Tool-box for LaTeX programmers using e-TeX
 Group:		Publishing

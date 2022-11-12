@@ -1,12 +1,12 @@
 Name:		texlive-etoolbox
-Version:	2.5f
+Version:	56554
 Release:	1
 Summary:	Tool-box for LaTeX programmers using e-TeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/etoolbox
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/etoolbox.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/etoolbox.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/etoolbox.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/etoolbox.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -25,12 +25,12 @@ commands; nevertheless, the package will not modify any part of
 the LaTeX kernel.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -39,7 +39,7 @@ the LaTeX kernel.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 

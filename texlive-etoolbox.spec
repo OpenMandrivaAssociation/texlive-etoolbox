@@ -3,7 +3,7 @@ Version:	56554
 Release:	2
 Summary:	Tool-box for LaTeX programmers using e-TeX
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/etoolbox
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/etoolbox
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/etoolbox.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/etoolbox.doc.r%{version}.tar.xz

@@ -1,6 +1,6 @@
 Name:		texlive-etoolbox
-Version:	56554
-Release:	2
+Version:	73881
+Release:	1
 Summary:	Tool-box for LaTeX programmers using e-TeX
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/etoolbox
